@@ -10,8 +10,14 @@ namespace Review2
     {
         public static void PlayerStartPoint(int startPoint)
         {
-            startPoint = 0;
+            //startPoint = 0;
             Console.WriteLine("The start point of the Snake and Ladder game is: " + startPoint);
+        }
+
+        public static void GetRandomNumber()
+        {
+            Random r = new Random();
+            int number = r.Next(1, 6);
         }
     }
 }
